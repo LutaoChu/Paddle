@@ -15,7 +15,6 @@ limitations under the License. */
 #pragma once
 #include <algorithm>
 #include "paddle/fluid/framework/op_registry.h"
-#include "paddle/fluid/inference/api/details/zero_copy_tensor.cc"
 
 namespace paddle {
 namespace operators {
@@ -32,8 +31,8 @@ class ShapeKernel : public framework::OpKernel<T> {
     auto in_dims = in_t->dims();
     for (int i = 0; i < in_dims.size(); ++i) {
       out_data[i] = in_dims[i];
-    ZeroCopyTensor::copy_from_cpu<Tensor>(&out_data)
     }
+    # todo tensor copy
   }
 };
 }  // namespace operators
