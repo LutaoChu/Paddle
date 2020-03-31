@@ -132,7 +132,7 @@ import paddle.sysconfig
 # from .tensor.math import min   #DEFINE_ALIAS
 # from .tensor.math import mm   #DEFINE_ALIAS
 from .tensor.math import div  #DEFINE_ALIAS
-# from .tensor.math import add   #DEFINE_ALIAS
+from .tensor.math import add  #DEFINE_ALIAS
 # from .tensor.math import atan   #DEFINE_ALIAS
 # from .tensor.math import logsumexp   #DEFINE_ALIAS
 # from .tensor.math import inverse   #DEFINE_ALIAS
